@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  body {
+    color: black !important;
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+.container {
+  display: flex;
+}
+
+article[role="main"] {
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  width: 31.25%;
+  margin-left: auto;
+}
